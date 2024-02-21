@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: dodgerblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 25px;
+}

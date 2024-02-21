@@ -1,0 +1,10 @@
+<div class="disc" class="{{info?.status}}" [ngStyle]="{
+		width: width + '%',
+		top: top + '%',
+		left: left + '%',
+		backgroundSize: 'auto ' + info?.gameWidth + 'px',
+		backgroundImage: info?.image,
+		transform: 'rotate(' + (info?.rotation ?? 0) * 360 / 8 + 'deg)'
+	}" (click)="onClick($event)">
+	<div class="hilite"></div>
+</div>
