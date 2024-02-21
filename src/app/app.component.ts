@@ -1,4 +1,4 @@
-import { NgFor, NgStyle } from '@angular/common';
+import { NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
 import { DiscComponent, DiscInfo } from './disc/disc.component';
 import { HttpService } from './http.service';
@@ -6,11 +6,7 @@ import { HttpService } from './http.service';
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [
-		NgStyle,
-		DiscComponent,
-		NgFor
-	],
+	imports: [NgStyle, DiscComponent],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.css'
 })
