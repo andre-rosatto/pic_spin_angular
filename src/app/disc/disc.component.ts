@@ -31,7 +31,8 @@ export class DiscComponent {
 
 	onClick(e: MouseEvent) {
 		const parent = (e.target as HTMLDivElement).offsetParent as HTMLDivElement;
-		const midPoint = parent.offsetLeft + parent.offsetWidth / 2;
+		const rect = parent.getBoundingClientRect();
+		const midPoint = rect.left + rect.width / 2;
 		const inc = e.clientX > midPoint ? 1 : -1;
 		this.info!.rotation += inc;
 		this.rotate.emit();
