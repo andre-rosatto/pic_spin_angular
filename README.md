@@ -1,6 +1,8 @@
 # PicSpin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+Versão do Pic Spin criada em Angular.
+Pic Spin é um jogo criado em Angular/Typescript e utiliza a API do site de fotos Pixabay.
+
 
 ## Development server
 
